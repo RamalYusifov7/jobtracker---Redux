@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const JobContainerWrapper = styled.section`
-  padding-top:80px;
+  padding-top:60px;
+  background-color:#f5f5f5;
   .job-found{
     margin-bottom:16px;
   }

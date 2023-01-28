@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
      margin:0;
      font-family: 'Work Sans', sans-serif;
+
   }
   .btn-unstyled{
     border:none;
