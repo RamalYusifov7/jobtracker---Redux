@@ -19,5 +19,13 @@ export const MainForm=styled.form`
        }
        @media(max-width:576px){
         padding:28px 12px;
+        &.search-form{
+            .row{
+               &>div:nth-child(2), &>div:nth-child(4){
+                  display:none
+               }
+            }
+             
+        }
        }
     `

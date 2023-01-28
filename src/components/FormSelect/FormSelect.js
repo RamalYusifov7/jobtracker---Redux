@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import { FormSelectWrapper } from '../styles/FormSelect/FormSelect.styled';
 function FormSelect({name,value,label,list,handleChange}) {
   return (
-    <FormSelectWrapper>
+    <FormSelectWrapper  className="form-select-item">
      <label htmlFor={name}>{label}</label>
      <Form.Select 
         name={name}

@@ -26,7 +26,7 @@ function SearchBar() {
         <section className='content-section'>
             <Container>
                 <SectionTitle>Search for jobs</SectionTitle>
-                <MainForm>
+                <MainForm  className='search-form'>
                     <Row>
                         <Col lg={4}>
                             <FormItem

@@ -13,11 +13,13 @@ function FormItem({type,name,value,handleChange,label,placeholder}) {
     <FormItemWrapper >
       <label htmlFor={label}>{label}</label>
       <Input
+        id={label}
         type={type}
         name={name}
         value={value}
         onChange={handleChange}
         placeholder={placeholder}
+        autoComplete="on"
       />
     </FormItemWrapper>
   )
