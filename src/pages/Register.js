@@ -69,8 +69,7 @@ function Register() {
             handleChange={handleChange}
             label="Password"
            />
-           <Button className='submit' type='submit'>Submit</Button>
-           {/* <Button className='demo-user' outlined >Demo user</Button> */}
+            <Button disabled={loading} className='submit' type='submit'>{loading ? "Loading...":"Submit"}</Button>
            <p className='form-footer'>Already have a account ? <Link to="/login">Log in </Link></p>
       </form>
      </ResgisterWrapper>

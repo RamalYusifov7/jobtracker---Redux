@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 
 const initialState={
-    loading:true,
+    loading:false,
     user:getUserFromLocalStorage()
 }
 

@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { updateUser } from '../../features/User/userSlice'
 
 function Profile() {
-  const { user } = useSelector((store) => store.user);
+  const { user,loading } = useSelector((store) => store.user);
   const dispatch = useDispatch();
   const [userData, setUserData] = useState({
     name: user?.name || '',
@@ -78,7 +78,7 @@ function Profile() {
                             />
                          </Col>
                          <Col lg={4}>
-                           <Button type='submit'>Save Changes</Button>
+                         <Button disabled={loading}  type='submit'>{loading ? "Loading......":"Save Changes"}</Button>
                          </Col>
                      </Row>
                  </MainForm>

@@ -112,7 +112,7 @@ function AddJob() {
             </Col>
             <Col lg={4}>
               <Button onClick={()=>dispatch(clearInputs())} outlined type='button' className='clear-form'>Clear</Button>
-              <Button type='submit'>Submit</Button>
+              <Button disabled={loading}  type='submit'>{loading ? "Loading...":"Submit"}</Button>
             </Col>
           </Row>
         </MainForm>
