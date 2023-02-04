@@ -10,6 +10,7 @@ export const LandingWrapper = styled.div`
       }
    }
    main {
+    height:calc(100% - 150px);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -40,6 +41,11 @@ export const LandingWrapper = styled.div`
         object-fit:cover;
     }
    }
+   @media (min-width: 1599px){
+        .landing-page-img{
+            height:600px;
+        }
+    }
   @media (max-width: 1199px){
         .landing-page-img{
             height:370px;
@@ -58,6 +64,9 @@ export const LandingWrapper = styled.div`
        }
     }
   @media (max-width: 767px){
+       main{
+        height:auto;
+       }
        main .row{
         flex-direction:column-reverse
        }
