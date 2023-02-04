@@ -2,6 +2,7 @@ import styled from "styled-components";
 export const LandingWrapper = styled.div`
    padding:16px 0;
    height:100vh;
+   background-color:red;
    header{
       .container-fluid{
         display:flex;
