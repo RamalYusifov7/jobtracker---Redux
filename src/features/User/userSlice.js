@@ -30,8 +30,8 @@ export const registerUser=createAsyncThunk(
         const resp = await globalApi.post('/auth/register', user);
          return resp.data
        } catch (error) {
-          initialState.loading=false
           toast.error(error.response.data.msg)
+          initialState.loading=false
        }
     }
 )
