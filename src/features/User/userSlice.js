@@ -30,7 +30,7 @@ export const registerUser=createAsyncThunk(
         const resp = await globalApi.post('/auth/register', user);
          return resp.data
        } catch (error) {
-          console.log(error.response.data);
+          initialState.loading=false
           toast.error(error.response.data.msg)
        }
     }
@@ -49,7 +49,7 @@ export const updateUser = createAsyncThunk(
       } catch (error) {
         console.log(error);
         return thunkAPI.rejectWithValue(error.response.data);
-
+        
       }
     }
   );
